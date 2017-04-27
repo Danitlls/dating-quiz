@@ -7,19 +7,26 @@ $(document).ready(function(){
 
     // declare new variable match
     var match;
+    var matchPhoto;
 
     if (place == "beach" && food == "burger"){
       match = "Bernie";
+      matchPhoto = "'img/Bernie.jpg'";
     } else if (place == "beach" && food == "vegetables"){
-      match = "Meryl";
+      match = " more veggies!!";
+      matchPhoto = "'img/vegetables.jpg'";
     } else if (place == "mountain" && food == "vegetables"){
       match = "rihanna";
+      matchPhoto = "'img/rihanna.jpg'";
     } else {
       match = "Some guy";
+      matchPhoto = "'img/dark.jpg'";
     }
 
+// show match name and photo
     $(".results").show();
     $(".person-name").text(match);
+    $(".match-photo").html('<img src =' + matchPhoto + '>' );
 
   })
 })
