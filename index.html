@@ -9,10 +9,73 @@
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
     <title>Celebrity Dating Quiz!</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Which celebrity should you date?!</h1>
+        </div>
+      </div>
+      <div class="container">
+        <form id="celebrity-match" class="" action="index.html" method="post">
+          <!-- first question -->
+          <div class="col-md-12">
+            <h3>Where would you rather go?</h3>
+          </div>
+          <div class="row">
+            <div class="radio col-md-6">
+              <img src="img/beach.jpg" alt="beach" class="img-responsive">
+              <label>
+                <input type="radio" name="place" value="beach">
+                <p>A beach</p>
+              </label>
+            </div>
+            <div class="radio col-md-6">
+              <img src="img/mountian.jpg" alt="mountain" class="img-responsive">
+              <label>
+                <input type="radio" name="place" value="mountain">
+                <p>A mountain</p>
+              </label>
+            </div>
+          </div>
+          <!-- second question -->
+          <div class="col-md-12">
+            <h3>What would you rather eat?</h3>
+          </div>
+          <div class="row">
+            <div class="radio col-md-6">
+              <img src="img/burger.jpg" alt="burger" class="img-responsive">
+              <label>
+                <input type="radio" name="food" value="burger">
+                <p>A burger</p>
+              </label>
+            </div>
+            <div class="radio col-md-6">
+              <img src="img/vegetables.jpg" alt="vegetables" class="img-responsive">
+              <label>
+                <input type="radio" name="food" value="vegetables">
+                <p>Vegetables</p>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="btn-group" id="centerbutton">
+              <button id="show-results" type="submit" name="button" class="btn btn-success btn-lg">Find out!</button>
+            </div><!--Button closes-->
+          </div>
+          </form>
+      </div>
 
+        <!-- results -->
+        <div class="col-md-12 results">
+          <h1>WE found your perfect match!!</h1>
+          <h2>You should date <span class="person-name"></span></h2>
+          <div class="match-photo"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
